@@ -9,13 +9,13 @@
             <div id="valor2"></div>
         </div>
         <div class="btn-cal btn-cal-radius btn-clean">
-            <button  onclick="{{ 'display.borrarTodo()' }}">C</button>
+            <button  onclick="{{ 'datacapture.borrarTodo()' }}">C</button>
         </div>
         <div class="screen2">
             <div id="app"> </div>
         </div>
         <div class="btn-cal btn-cal-radius">
-            <button onclick="{{ 'display.borrar()' }}">&larr;</button>
+            <button onclick="{{ 'datacapture.borrar()' }}">&larr;</button>
         </div>
         <div class="btn-cal btn-cal-radius">
             <button class="numero">7</button>

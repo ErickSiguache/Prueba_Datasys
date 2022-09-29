@@ -1,4 +1,4 @@
-class Calculadora {
+class CalculatorService {
     async sumar(num1, num2) {
         let total = 0;
         const HTMLResponse = document.querySelector("#app");
