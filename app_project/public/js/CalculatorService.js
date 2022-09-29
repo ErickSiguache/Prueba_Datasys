@@ -1,8 +1,10 @@
+var URL = 'http://127.0.0.1:8000/api/';
+
 class CalculatorService {
     async sumar(num1, num2) {
         let total = 0;
         const HTMLResponse = document.querySelector("#app");
-        await fetch("http://127.0.0.1:8000/api/addition", {
+        await fetch(URL + "addition", {
             method: "POST",
             body: JSON.stringify({
                 numero1: num1,
@@ -34,7 +36,7 @@ class CalculatorService {
     async restar(num1, num2) {
         let total = 0;
         const HTMLResponse = document.querySelector("#app");
-        await fetch("http://127.0.0.1:8000/api/subtraction", {
+        await fetch(URL + "subtraction", {
             method: "POST",
             body: JSON.stringify({
                 numero1: num1,
@@ -65,7 +67,7 @@ class CalculatorService {
     async dividir(num1, num2) {
         let total = 0;
         const HTMLResponse = document.querySelector("#app");
-        await fetch("http://127.0.0.1:8000/api/split", {
+        await fetch(URL + "split", {
             method: "POST",
             body: JSON.stringify({
                 numero1: num1,
@@ -96,7 +98,7 @@ class CalculatorService {
     async multiplicar(num1, num2) {
         let total = 0;
         const HTMLResponse = document.querySelector("#app");
-        await fetch("http://127.0.0.1:8000/api/multiplication", {
+        await fetch(URL + "multiplication", {
             method: "POST",
             body: JSON.stringify({
                 numero1: num1,

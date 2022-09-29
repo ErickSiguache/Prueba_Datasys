@@ -2,7 +2,7 @@ class DataCapture {
     constructor(DataCaptureNum1, DataCaptureNum2) {
         this.DataCaptureNum2 = DataCaptureNum2;
         this.DataCaptureNum1 = DataCaptureNum1;
-        this.calculador = new CalculatorService();
+        this.calculo = new CalculatorService();
         this.operatortype = undefined;
         this.Num2 = '';
         this.Num1 = '';
@@ -61,7 +61,7 @@ class DataCapture {
         const Num2 = parseFloat(this.Num2);
 
         if( isNaN(Num2)  || isNaN(Num1) ) return
-        this.Num2 = this.calculador[this.operatortype](Num1, Num2);
+        this.Num2 = this.calculo[this.operatortype](Num1, Num2);
         borrarTodoMas();
     }
 }
