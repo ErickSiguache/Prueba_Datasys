@@ -3,7 +3,7 @@
 @section('tituloPagina', 'Calculadora en Laravel 8')
 
 @section('contenido')
-    <div class="card">
+    <div class="cardDD">
         <div class="screen">
             <div style="screen:none" id="valor1"></div>
             <div id="valor2"></div>

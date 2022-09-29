@@ -1,14 +1,14 @@
 .card2 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    height: 100px;
+    max-width: 100px;
+    height: 50px;
     margin: auto;
     display: grid;
     text-align: center;
-    padding: 20px 20px;
+    padding: 0px 0px;
   }
 
-.card {
+.cardDD {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 400px;
     height: 500px;
@@ -77,16 +77,6 @@
     font-size: 35px;
 }
 
-button{
-    border: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    outline: none;
-    color: #7e7e7e;
-    font-size: 35px;
-}
-
 .btn-cal > .equal{
     background-color: #fffb88;
 }
@@ -114,6 +104,15 @@ button{
 }
 
 
+button{
+    border: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    color: #7e7e7e;
+    font-size: 35px;
+}
 
 body {
     --color-bg: #ddd;
@@ -125,6 +124,12 @@ body.dark-theme {
     --color-texto: #eeeeee;
 }
 
+body.dark-theme .card {
+    --color-bg: rgb(47, 47, 47);
+    --color-texto: #eeeeee;
+}
+
+
 body.dark-theme img {
     filter: brightness(.8) contrast(1.2);
 }
@@ -134,6 +139,12 @@ body.dark-theme img {
         --color-bg: rgb(47, 47, 47);
         --color-texto: #ffb847;
     }
+
+    body.light-theme  .card {
+        --color-bg: rgb(47, 47, 47);
+        --color-texto: #eeeeee;
+    }
+
 
     body.light-theme {
         --color-bg: #ddd;
@@ -153,4 +164,3 @@ body {
 h1 {
     color: var(--color-texto);
 }
-
