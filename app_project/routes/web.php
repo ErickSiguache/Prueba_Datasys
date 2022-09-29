@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use \App\Http\Controllers\v1\AppControllers\CalculosJSController;
+use \App\Http\Controllers\v1\AppControllers\CalculosPHPController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [CalculosPHPController::class, 'index'])->name('index');
+Route::post('/', [CalculosPHPController::class, 'calculos'])->name('calculos');
+
+Route::get('/calculadora', [CalculosJSController::class, 'index'])->name('index');
+

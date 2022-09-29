@@ -13,7 +13,7 @@ class CalculosController extends Controller
     //Metodo para la realizacion de las sumas
     public function prueba(Request $request){
         return response()->json([
-            'respuesta' => ''
+            'response' => ''
         ]);
     }
 

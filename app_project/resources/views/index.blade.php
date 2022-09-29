@@ -10,18 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="{{asset('css/stiles.css')}}" rel="stylesheet"  crossorigin="anonymous">
-    <link href="{{ asset('css/styles.css') }}" rel="stylesheet" crossorigin="anonymous">
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>@yield('tituloPagina')</title>
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-light bg">
+        <nav class="navbar navbar-light">
             <div class="container-fluid">
               <h1>  </h1>
-              <form class="d-flex">
+              <form class="d-flex card2" >
                 <button id="boton" class="btn btn-outline-success" type="submit">Cambiar tema</button>
-              </form>
+            </form>
+            <h1> </h1>
             </div>
           </nav>
     </header>
@@ -39,9 +40,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-    <script src="{{asset('darkmode.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('js/display.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/calculadora.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/action_buttons.js') }}"></script>
+    <script src="{{asset('js/darkmode.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/DataCapture.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/CalculatorService.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/DOMButtons_Action.js') }}"></script>
   </body>
 </html>
