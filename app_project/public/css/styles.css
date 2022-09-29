@@ -30,6 +30,19 @@
     grid-column: 1 / 5;
 }
 
+
+button{
+    background-color: var(--color-bg);
+    border-color: var(--color-bg);
+    border: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 1px;
+    outline: none;
+    color: var(--color-texto);
+    font-size: 35px;
+}
+
 .screen2{
     background-color: #414141;
     border-radius: 12px;
@@ -103,32 +116,15 @@
     color: black;
 }
 
-
-button{
-    border: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    outline: none;
-    color: #7e7e7e;
-    font-size: 35px;
-}
-
 body {
     --color-bg: #ddd;
-    --color-texto: #EE6352;
+    --color-texto: #000000;
 }
 
 body.dark-theme {
     --color-bg: rgb(47, 47, 47);
     --color-texto: #eeeeee;
 }
-
-body.dark-theme .card {
-    --color-bg: rgb(47, 47, 47);
-    --color-texto: #eeeeee;
-}
-
 
 body.dark-theme img {
     filter: brightness(.8) contrast(1.2);
@@ -137,14 +133,13 @@ body.dark-theme img {
 @media (prefers-color-scheme: dark) {
     body {
         --color-bg: rgb(47, 47, 47);
-        --color-texto: #ffb847;
+        --color-texto: #ffffff;
     }
 
     body.light-theme  .card {
         --color-bg: rgb(47, 47, 47);
         --color-texto: #eeeeee;
     }
-
 
     body.light-theme {
         --color-bg: #ddd;
@@ -161,6 +156,10 @@ body {
     background-color: var(--color-bg);
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-texto);
+}
+
+label {
     color: var(--color-texto);
 }

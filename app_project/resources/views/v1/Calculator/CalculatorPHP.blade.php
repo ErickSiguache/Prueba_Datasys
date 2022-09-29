@@ -42,5 +42,6 @@
     <div class="grid text-center calculadora">
         <h4> El resultado del proceso es: {{$valores['response']}} </h4>
     </div>
+
 @endsection
 
